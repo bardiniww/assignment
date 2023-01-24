@@ -34,6 +34,9 @@ public class CustomerServiceImpl implements CustomerService {
                 inputAccount.getPassword()
         ));
 
+//        final BigDecimal initBalance = Optional.ofNullable(registrationRequest.getBalance()).orElse(BigDecimal.ZERO);
+//        //todo send event to cash service
+
         return new Customer(createdUser, createdAccount);
     }
 }
