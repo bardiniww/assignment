@@ -12,6 +12,7 @@ public class AccountServiceImpl implements AccountService{
     @Override
     @NonNull
     public Account save(@NonNull final Account account) {
+        //check login, email, phoneNumber exist
         return accountDAO.save(account);
     }
 }

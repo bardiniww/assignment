@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="register api added">
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-    </list>
-    <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="db props added">
+      <change afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgentType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
+    <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +41,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -58,8 +72,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
@@ -96,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="13636000" />
+      <workItem from="1674563734222" duration="16535000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -133,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674579472491</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="db props added">
+      <created>1674580022745</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674580022745</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,7 +179,8 @@
     <MESSAGE value="pojo fields added" />
     <MESSAGE value="docker compose init postgre and pgadmin" />
     <MESSAGE value="register api added" />
-    <option name="LAST_COMMIT_MESSAGE" value="register api added" />
+    <MESSAGE value="db props added" />
+    <option name="LAST_COMMIT_MESSAGE" value="db props added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

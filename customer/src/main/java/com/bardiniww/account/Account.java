@@ -1,10 +1,14 @@
 package com.bardiniww.account;
 
+import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.ToString;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
 @Getter
+@ToString
+@EqualsAndHashCode
 public class Account {
     @Nullable
     private final Long id;
