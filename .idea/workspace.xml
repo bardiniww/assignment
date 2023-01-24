@@ -4,23 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="db props added">
-      <change afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgentType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="cash service init">
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashTransactionType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgentType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +68,25 @@
     "settings.editor.selected.configurable": "preferences.sourceCode"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bardiniww" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+    <configuration name="CashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="cash" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.CashApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bardiniww.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.CustomerApplication" />
@@ -95,6 +103,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.CashApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="16535000" />
+      <workItem from="1674563734222" duration="21278000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -154,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674580022745</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="cash service init">
+      <created>1674582719784</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674582719784</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,7 +196,8 @@
     <MESSAGE value="docker compose init postgre and pgadmin" />
     <MESSAGE value="register api added" />
     <MESSAGE value="db props added" />
-    <option name="LAST_COMMIT_MESSAGE" value="db props added" />
+    <MESSAGE value="cash service init" />
+    <option name="LAST_COMMIT_MESSAGE" value="cash service init" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
