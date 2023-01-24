@@ -1,4 +1,4 @@
-package com.bardiniww;
+package com.bardiniww.cash.transaction;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

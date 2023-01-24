@@ -1,4 +1,4 @@
-package com.bardiniww;
+package com.bardiniww.cash.balance;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
