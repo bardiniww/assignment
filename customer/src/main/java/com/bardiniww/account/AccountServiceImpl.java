@@ -11,8 +11,9 @@ public class AccountServiceImpl implements AccountService{
 
     @Override
     @NonNull
-    public Account save(@NonNull final Account account) {
+    public AccountDTO save(@NonNull final Account account) {
         //todo check login, email, phoneNumber exist
-        return accountDAO.save(account);
+
+        return AccountDTOConverter.convertToDTO(accountDAO.save(account));
     }
 }

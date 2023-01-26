@@ -4,5 +4,5 @@ import org.springframework.lang.NonNull;
 
 public interface UserService {
     @NonNull
-    User save(@NonNull final User user);
+    UserDTO save(@NonNull final User user);
 }

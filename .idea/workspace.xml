@@ -4,24 +4,40 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="cash pojo added">
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashAgentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashTransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionType.java" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="refactor class modifiers">
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerRegistrationRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerRegistrationRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserServiceImpl.java" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +84,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
+    "last_opened_file_path": "/Users/ivan/Desktop/projects/app/customer/src/main/java/example",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,6 +97,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/customer/src/main/java/example" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.bardiniww" />
     </key>
@@ -130,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="21980000" />
+      <workItem from="1674563734222" duration="26899000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -188,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674588850805</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="cash api structure added">
+      <created>1674589407960</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674589407960</updated>
+    </task>
+    <task id="LOCAL-00010" summary="refactor class modifiers">
+      <created>1674589576037</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674589576037</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,7 +250,9 @@
     <MESSAGE value="db props added" />
     <MESSAGE value="cash service init" />
     <MESSAGE value="cash pojo added" />
-    <option name="LAST_COMMIT_MESSAGE" value="cash pojo added" />
+    <MESSAGE value="cash api structure added" />
+    <MESSAGE value="refactor class modifiers" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor class modifiers" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

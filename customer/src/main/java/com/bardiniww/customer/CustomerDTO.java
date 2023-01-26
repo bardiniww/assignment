@@ -1,7 +1,7 @@
 package com.bardiniww.customer;
 
-import com.bardiniww.account.Account;
-import com.bardiniww.user.User;
+import com.bardiniww.account.AccountDTO;
+import com.bardiniww.user.UserDTO;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -12,9 +12,9 @@ import org.springframework.lang.NonNull;
 @Getter
 @ToString
 @EqualsAndHashCode
-public class Customer {
+public class CustomerDTO {
     @NonNull
-    private final User user;
+    private final UserDTO user;
     @NonNull
-    private final Account account;
+    private final AccountDTO account;
 }

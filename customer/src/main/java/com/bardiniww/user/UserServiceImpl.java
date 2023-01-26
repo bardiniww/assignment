@@ -11,7 +11,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     @NonNull
-    public User save(@NonNull final User user) {
-        return userDAO.save(user);
+    public UserDTO save(@NonNull final User user) {
+        return UserDTOConverter.convertToDTO(userDAO.save(user));
     }
 }

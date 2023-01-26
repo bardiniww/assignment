@@ -34,7 +34,7 @@ public class Account {
     ) {
         this.id = null;
         this.userId = userId;
-        this.login = email; //todo invoke from props
+        this.login = email;
         this.email = email;
         this.phoneNumber = phoneNumber;
         this.password = password;

@@ -1,8 +1,10 @@
 package com.bardiniww.customer;
 
 import com.bardiniww.account.Account;
+import com.bardiniww.account.AccountDTO;
 import com.bardiniww.account.AccountService;
 import com.bardiniww.user.User;
+import com.bardiniww.user.UserDTO;
 import com.bardiniww.user.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
@@ -18,25 +20,23 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     @NonNull
-    public Customer registerCustomer(@NonNull final CustomerRegistrationRequest registrationRequest) {
-        final User inputUser = registrationRequest.getUser();
-        final User createdUser = userService.save(new User(
-                inputUser.getFirstName(),
-                inputUser.getLastName(),
-                inputUser.getDateOfBirth()
+    public CustomerDTO registerCustomer(@NonNull final CustomerRegistrationRequest registrationRequest) {
+        final UserDTO createdUser = userService.save(new User(
+                registrationRequest.getFirstName(),
+                registrationRequest.getLastName(),
+                registrationRequest.getDateOfBirth()
         ));
 
-        final Account inputAccount = registrationRequest.getAccount();
-        final Account createdAccount = accountService.save(new Account(
+        final AccountDTO createdAccount = accountService.save(new Account(
                 Objects.requireNonNull(createdUser.getId()),
-                inputAccount.getEmail(),
-                inputAccount.getPhoneNumber(),
-                inputAccount.getPassword()
+                registrationRequest.getEmail(),
+                registrationRequest.getPhoneNumber(),
+                registrationRequest.getPassword()
         ));
 
 //        final BigDecimal initBalance = Optional.ofNullable(registrationRequest.getBalance()).orElse(BigDecimal.ZERO);
 //        //todo send event to cash service
 
-        return new Customer(createdUser, createdAccount);
+        return new CustomerDTO(createdUser, createdAccount);
     }
 }

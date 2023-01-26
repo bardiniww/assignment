@@ -1,21 +1,30 @@
 package com.bardiniww.customer;
 
-import com.bardiniww.account.Account;
-import com.bardiniww.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @AllArgsConstructor
 @Getter
 public class CustomerRegistrationRequest {
     @NonNull
-    private final User user;
+    private final String firstName;
     @NonNull
-    private final Account account;
+    private final String lastName;
+    @NonNull
+    private final LocalDate dateOfBirth;
+    @NonNull
+    private final String login;
+    @NonNull
+    private final String email;
+    @NonNull
+    private final String phoneNumber;
+    @NonNull
+    private final String password;
     @Nullable
-    private final BigDecimal balance;
+    private final BigDecimal initialBalance;
 }
