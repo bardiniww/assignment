@@ -4,40 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="refactor class modifiers">
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountDTOConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserDTOConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/account/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerRegistrationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/customer/CustomerServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserDTOConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/example/user/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerRegistrationRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerRegistrationRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin" />
     <option name="SHOW_DIALOG" value="false" />
@@ -101,6 +81,7 @@
       <recent name="$PROJECT_DIR$/customer/src/main/java/example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bardiniww.account" />
       <recent name="com.bardiniww" />
     </key>
   </component>
@@ -150,7 +131,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="26899000" />
+      <workItem from="1674563734222" duration="29900000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -222,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674589576037</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="minor changes">
+      <created>1674740159576</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674740159576</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,7 +240,8 @@
     <MESSAGE value="cash pojo added" />
     <MESSAGE value="cash api structure added" />
     <MESSAGE value="refactor class modifiers" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor class modifiers" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">

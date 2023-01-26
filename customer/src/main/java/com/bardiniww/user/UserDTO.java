@@ -1,8 +1,6 @@
 package com.bardiniww.user;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
+import lombok.*;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
@@ -11,6 +9,8 @@ import java.time.LocalDate;
 @Getter
 @AllArgsConstructor
 @Builder
+@EqualsAndHashCode
+@ToString
 public class UserDTO {
     @Nullable
     private final Long id;

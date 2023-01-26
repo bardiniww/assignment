@@ -7,13 +7,13 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class AccountServiceImpl implements AccountService{
-    private final AccountDAO accountDAO;
+    private final AccountRepository accountRepository;
 
     @Override
     @NonNull
     public AccountDTO save(@NonNull final Account account) {
         //todo check login, email, phoneNumber exist
 
-        return AccountDTOConverter.convertToDTO(accountDAO.save(account));
+        return AccountDTOConverter.convertToDTO(accountRepository.save(account));
     }
 }

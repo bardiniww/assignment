@@ -7,11 +7,12 @@ import org.springframework.stereotype.Service;
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements UserService{
-    private final UserDAO userDAO;
+
+    private final UserRepository userRepository;
 
     @Override
     @NonNull
     public UserDTO save(@NonNull final User user) {
-        return UserDTOConverter.convertToDTO(userDAO.save(user));
+        return UserDTOConverter.convertToDTO(userRepository.save(user));
     }
 }
