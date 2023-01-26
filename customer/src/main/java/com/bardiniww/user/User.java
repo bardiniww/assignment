@@ -1,52 +1,82 @@
 package com.bardiniww.user;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.ToString;
-import org.springframework.lang.NonNull;
-import org.springframework.lang.Nullable;
+import com.bardiniww.account.Account;
+import com.bardiniww.email.EmailData;
+import com.bardiniww.phone.PhoneData;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.List;
 
-@Getter
-@ToString
-@EqualsAndHashCode
+@Entity
+@Table(name = "[user]")
+@Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class User {
-    @Nullable
-    private final Long id;
-    @NonNull
-    private final String firstName;
-    @NonNull
-    private final String lastName;
-    @NonNull
-    private final LocalDate dateOfBirth;
+    @Id
+    @SequenceGenerator(
+            name = "user_sequence",
+            sequenceName = "user_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "user_sequence"
+    )
+    @Column(
+            name = "id",
+            updatable = false
+    )
+    private Long id;
 
-    /**
-     * Runtime init constructor
-     */
-    public User(
-            @NonNull String firstName,
-            @NonNull String lastName,
-            @NonNull LocalDate dateOfBirth
-    ) {
-        this.id = null;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-    }
+    @Column(
+            name = "name",
+            nullable = false,
+            length = 500
+    )
+    private String name;
 
-    /**
-     * DAO constructor
-     */
-    public User(
-            @NonNull Long id,
-            @NonNull String firstName,
-            @NonNull String lastName,
-            @NonNull LocalDate dateOfBirth
-    ) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-    }
+    @Column(
+            name = "date_of_birth",
+            nullable = false,
+            columnDefinition = "TIMESTAMP WITHOUT TIME ZONE"
+    )
+    private LocalDate dateOfBirth;
+
+    @Column(
+            name = "password",
+            nullable = false,
+            length = 500
+    )
+    private String password;
+
+    @OneToOne(
+            mappedBy = "user",
+            orphanRemoval = true,
+            cascade = {CascadeType.PERSIST, CascadeType.REMOVE}
+    )
+    private Account account;
+
+    @OneToMany(
+            mappedBy = "user",
+            orphanRemoval = true,
+            cascade = {CascadeType.PERSIST, CascadeType.REMOVE},
+            fetch = FetchType.LAZY
+    )
+    private List<EmailData> emailDataList = new ArrayList<>();
+
+    @OneToMany(
+            mappedBy = "user",
+            orphanRemoval = true,
+            cascade = {CascadeType.PERSIST, CascadeType.REMOVE},
+            fetch = FetchType.LAZY
+    )
+    private List<PhoneData> phoneDataList = new ArrayList<>();
 }

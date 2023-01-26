@@ -1,4 +1,4 @@
-package com.bardiniww.account;
+package com.bardiniww.email;
 
 import com.bardiniww.user.User;
 import lombok.AllArgsConstructor;
@@ -10,28 +10,31 @@ import javax.persistence.*;
 
 @Entity
 @Table(
-        name = "account",
+        name = "email_data",
         uniqueConstraints = {
                 @UniqueConstraint(
-                        name = "account_user_id_unique",
-                        columnNames = "user_id"
+                        name = "email_data_email_unique",
+                        columnNames = "email"
                 )
+        },
+        indexes = {
+                @Index(name = "email_data_user_id_idx", columnList = "user_id")
         }
 )
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Account {
+public class EmailData {
     @Id
     @SequenceGenerator(
-            name = "account_sequence",
-            sequenceName = "account_sequence",
+            name = "email_data_sequence",
+            sequenceName = "email_data_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "account_sequence"
+            generator = "email_data_sequence"
     )
     @Column(
             name = "id",
@@ -39,7 +42,7 @@ public class Account {
     )
     private Long id;
 
-    @OneToOne(
+    @ManyToOne(
             cascade = {CascadeType.REMOVE, CascadeType.PERSIST}
     )
     @JoinColumn(
@@ -47,8 +50,15 @@ public class Account {
             nullable = false,
             referencedColumnName = "id",
             foreignKey = @ForeignKey(
-                    name = "account_user_id_fkey"
+                    name = "email_data_user_id_fkey"
             )
     )
     private User user;
+
+    @Column(
+            name = "email",
+            nullable = false,
+            length = 200
+    )
+    private String email;
 }
