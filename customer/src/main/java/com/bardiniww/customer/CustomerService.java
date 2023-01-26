@@ -5,5 +5,5 @@ import org.springframework.lang.NonNull;
 
 public interface CustomerService {
     @NonNull
-    CustomerDTO registerCustomer(@NonNull final CustomerRegistrationRequest registrationRequest);
+    CustomerDTO createCustomer(@NonNull final CustomerRegistrationRequest registrationRequest);
 }

@@ -20,7 +20,7 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     @NonNull
-    public CustomerDTO registerCustomer(@NonNull final CustomerRegistrationRequest registrationRequest) {
+    public CustomerDTO createCustomer(@NonNull final CustomerRegistrationRequest registrationRequest) {
         final UserDTO createdUser = userService.save(new User(
                 registrationRequest.getFirstName(),
                 registrationRequest.getLastName(),

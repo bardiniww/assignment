@@ -1,6 +1,5 @@
 package com.bardiniww.user;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
@@ -10,7 +9,6 @@ import org.springframework.lang.Nullable;
 import java.time.LocalDate;
 
 @Getter
-@AllArgsConstructor
 @ToString
 @EqualsAndHashCode
 public class User {
@@ -22,4 +20,33 @@ public class User {
     private final String lastName;
     @NonNull
     private final LocalDate dateOfBirth;
+
+    /**
+     * Runtime init constructor
+     */
+    public User(
+            @NonNull String firstName,
+            @NonNull String lastName,
+            @NonNull LocalDate dateOfBirth
+    ) {
+        this.id = null;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+    }
+
+    /**
+     * DAO constructor
+     */
+    public User(
+            @NonNull Long id,
+            @NonNull String firstName,
+            @NonNull String lastName,
+            @NonNull LocalDate dateOfBirth
+    ) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+    }
 }

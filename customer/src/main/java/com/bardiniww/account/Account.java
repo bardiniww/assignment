@@ -1,13 +1,11 @@
 package com.bardiniww.account;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.ToString;
 import org.springframework.lang.NonNull;
 import org.springframework.lang.Nullable;
 
-@AllArgsConstructor
 @Getter
 @ToString
 @EqualsAndHashCode
@@ -24,4 +22,40 @@ public class Account {
     private final String phoneNumber;
     @NonNull
     private final String password;
+
+    /**
+     * Runtime init constructor
+     */
+    public Account(
+            @NonNull Long userId,
+            @NonNull String email,
+            @NonNull String phoneNumber,
+            @NonNull String password
+    ) {
+        this.id = null;
+        this.userId = userId;
+        this.login = email;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+    }
+
+    /**
+     * DAO constructor
+     */
+    public Account(
+            @NonNull Long id,
+            @NonNull Long userId,
+            @NonNull String login,
+            @NonNull String email,
+            @NonNull String phoneNumber,
+            @NonNull String password
+    ) {
+        this.id = id;
+        this.userId = userId;
+        this.login = login;
+        this.email = email;
+        this.phoneNumber = phoneNumber;
+        this.password = password;
+    }
 }

@@ -24,9 +24,9 @@ public class CustomerController {
     @PostMapping
     @NonNull
     @Transactional
-    public ResponseEntity<CustomerDTO> registerCustomer(@Valid @NonNull @RequestBody final CustomerRegistrationRequest registrationRequest) {
+    public ResponseEntity<CustomerDTO> createCustomer(@Valid @NonNull @RequestBody final CustomerRegistrationRequest registrationRequest) {
         log.info("customer registration request {}", registrationRequest);
-        final CustomerDTO createdCustomerDTO = customerService.registerCustomer(registrationRequest);
+        final CustomerDTO createdCustomerDTO = customerService.createCustomer(registrationRequest);
         return ResponseEntity.ok(createdCustomerDTO);
     }
 }

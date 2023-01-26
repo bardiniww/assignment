@@ -6,7 +6,8 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class AccountServiceImpl implements AccountService{
+public class AccountServiceImpl implements AccountService {
+
     private final AccountRepository accountRepository;
 
     @Override
