@@ -14,8 +14,6 @@ public class CashBalanceServiceImpl implements CashBalanceService {
     @Override
     @NonNull
     public BigDecimal getBalance(@NonNull Long accountId) {
-        return cashBalanceRepository
-                .getBalance(accountId)
-                .orElse(BigDecimal.ZERO);
+        return cashBalanceRepository.getBalance(accountId);
     }
 }
