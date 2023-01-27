@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @AllArgsConstructor
 @Repository
-public class CashTransactionJdbcRepository {
+public class CashTransactionJdbcRepository implements CashTransactionRepository {
     private final JdbcTemplate jdbcTemplate;
 }

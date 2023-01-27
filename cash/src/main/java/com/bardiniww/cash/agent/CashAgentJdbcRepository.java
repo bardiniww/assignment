@@ -26,7 +26,7 @@ public class CashAgentJdbcRepository implements CashAgentRepository {
                 SQL_INSERT,
                 new MapSqlParameterSource()
                         .addValue("account_id", cashAgent.getAccountId())
-                        .addValue("type_id", cashAgent.getTypeId()),
+                        .addValue("type_id", cashAgent.getType().getId()),
                 new CashAgentRowMapper()
         );
     }
