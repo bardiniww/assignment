@@ -8,3 +8,4 @@ spring:
     url: jdbc:postgresql://localhost:5432/cash
     username: user
     password: password
+    driver-class-name: org.postgresql.Driver

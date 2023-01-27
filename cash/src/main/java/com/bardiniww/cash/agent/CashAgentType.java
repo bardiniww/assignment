@@ -9,7 +9,6 @@ import java.util.Map;
 
 @Slf4j
 @Getter
-//todo add migration
 public enum CashAgentType {
     CUSTOMER(1, "Pure customer"),
     COMPANY(2, "Huge company")
