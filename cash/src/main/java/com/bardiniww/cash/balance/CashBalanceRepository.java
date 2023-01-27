@@ -1,4 +1,11 @@
 package com.bardiniww.cash.balance;
 
-public interface CashBalanceRepository {
+import org.springframework.lang.NonNull;
+
+import java.math.BigDecimal;
+import java.util.Optional;
+
+interface CashBalanceRepository {
+    @NonNull
+    Optional<BigDecimal> getBalance(@NonNull final Long accountId);
 }
