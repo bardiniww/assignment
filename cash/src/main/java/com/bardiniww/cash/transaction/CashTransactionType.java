@@ -9,7 +9,6 @@ import java.util.Map;
 
 @Slf4j
 @Getter
-//todo add migration
 public enum CashTransactionType {
     USER_INIT(1, "Initial accrual"),
     TRANSFER(1, "Money transfer"),

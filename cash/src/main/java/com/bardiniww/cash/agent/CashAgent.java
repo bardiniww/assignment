@@ -13,5 +13,5 @@ public class CashAgent {
     @NonNull
     private final Long accountId;
     @NonNull
-    private final Integer typeId;
+    private final CashAgentType type;
 }

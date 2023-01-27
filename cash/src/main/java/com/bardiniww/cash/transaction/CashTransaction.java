@@ -19,5 +19,5 @@ public class CashTransaction {
     @NonNull
     private final BigDecimal amount;
     @NonNull
-    private final Integer typeId;
+    private final CashTransactionType type;
 }

@@ -4,27 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="props added to cash entities">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentJdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceJdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionJdbcRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cash/src/main/resources/db/migration/V01.00.00__init_tables.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/resources/db/migration/V01.00.00__init_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="cash migrations added">
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/resources/db/migration/V01.00.00__init_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/db/migration/V01.00.00__init_tables.sql" afterDir="false" />
     </list>
-    <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin" />
+    <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,6 +38,21 @@
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="18" start2="6" end2="10" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="19" end1="25" start2="11" end2="11" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="26" end1="27" start2="12" end2="12" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="101" end1="102" start2="86" end2="87" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="130" end1="130" start2="115" end2="116" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="131" end1="132" start2="117" end2="117" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="147" end1="148" start2="132" end2="133" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="261" end1="262" start2="246" end2="261" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="295" end1="296" start2="294" end2="297" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -99,7 +106,7 @@
       <recent name="com.bardiniww" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+  <component name="RunManager" selected="Spring Boot.CashApplication">
     <configuration name="CashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cash" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.CashApplication" />
@@ -128,8 +135,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.CashApplication" />
+        <item itemvalue="Spring Boot.CustomerApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="48629000" />
+      <workItem from="1674563734222" duration="51025000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -259,7 +266,21 @@
       <option name="project" value="LOCAL" />
       <updated>1674818296727</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="flyway added">
+      <created>1674825976187</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674825976187</updated>
+    </task>
+    <task id="LOCAL-00018" summary="cash migrations added">
+      <created>1674828944718</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1674828944718</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,7 +314,9 @@
     <MESSAGE value="assignment task model structure init" />
     <MESSAGE value="cash service entities edited" />
     <MESSAGE value="props added to cash entities" />
-    <option name="LAST_COMMIT_MESSAGE" value="props added to cash entities" />
+    <MESSAGE value="flyway added" />
+    <MESSAGE value="cash migrations added" />
+    <option name="LAST_COMMIT_MESSAGE" value="cash migrations added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
