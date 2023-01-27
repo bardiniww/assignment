@@ -4,26 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="assignment task model structure init">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="cash service entities edited">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalance.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/balance/CashBalanceServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin" />
     <option name="SHOW_DIALOG" value="false" />
@@ -142,7 +125,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="41653000" />
+      <workItem from="1674563734222" duration="42106000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -242,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674753700861</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="cash service entities edited">
+      <created>1674816534523</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674816534523</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,7 +264,8 @@
     <MESSAGE value="refactor class modifiers" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="assignment task model structure init" />
-    <option name="LAST_COMMIT_MESSAGE" value="assignment task model structure init" />
+    <MESSAGE value="cash service entities edited" />
+    <option name="LAST_COMMIT_MESSAGE" value="cash service entities edited" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
