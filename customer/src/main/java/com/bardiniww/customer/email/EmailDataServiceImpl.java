@@ -13,4 +13,10 @@ public class EmailDataServiceImpl implements EmailDataService {
     public boolean existsByEmail(@NonNull String email) {
         return emailDataRepository.existsByEmail(email);
     }
+
+    @NonNull
+    @Override
+    public EmailData save(@NonNull final EmailData emailData) {
+        return emailDataRepository.save(emailData);
+    }
 }

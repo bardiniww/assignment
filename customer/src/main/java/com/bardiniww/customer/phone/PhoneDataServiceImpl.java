@@ -13,4 +13,10 @@ public class PhoneDataServiceImpl implements PhoneDataService {
     public boolean existsByPhone(@NonNull String email) {
         return phoneDataRepository.existsByPhone(email);
     }
+
+    @NonNull
+    @Override
+    public PhoneData save(@NonNull final PhoneData phoneData) {
+        return phoneDataRepository.save(phoneData);
+    }
 }
