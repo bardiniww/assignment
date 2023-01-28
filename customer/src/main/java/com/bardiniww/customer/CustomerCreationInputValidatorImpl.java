@@ -1,6 +1,8 @@
 package com.bardiniww.customer;
 
 import com.bardiniww.clients.customer.CustomerCreationRequestDTO;
+import com.bardiniww.customer.email.EmailDataService;
+import com.bardiniww.customer.phone.PhoneDataService;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.lang.NonNull;
@@ -20,6 +22,9 @@ class CustomerCreationInputValidatorImpl implements CustomerCreationInputValidat
     private static final String DATE_OF_BIRTH = "Date of birth";
     private static final String BALANCE = "Balance";
 
+    private final EmailDataService emailDataService;
+    private final PhoneDataService phoneDataService;
+
     @Override
     public void validate(@NonNull CustomerCreationRequestDTO request) {
         validateName(request.getName());
@@ -38,9 +43,7 @@ class CustomerCreationInputValidatorImpl implements CustomerCreationInputValidat
     }
 
     private void validateEmail(@NonNull final String email) {
-        //todo impl email exist
-
-        boolean isValid = StringUtils.isNotBlank(email.trim());
+        boolean isValid = StringUtils.isNotBlank(email.trim()) && !emailDataService.existsByEmail(email);
         if (!isValid) {
             throw new CustomerValidationException(EMAIL);
         }
@@ -48,9 +51,7 @@ class CustomerCreationInputValidatorImpl implements CustomerCreationInputValidat
 
 
     private void validatePhone(@NonNull final String phone) {
-        //todo impl phone exist
-
-        boolean isValid = StringUtils.isNotBlank(phone);
+        boolean isValid = StringUtils.isNotBlank(phone) && !phoneDataService.existsByPhone(phone);
         if (!isValid) {
             throw new CustomerValidationException(PHONE);
         }
