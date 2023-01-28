@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -22,4 +23,6 @@ public class CustomerCreationRequestDTO implements Serializable {
     private final Set<EmailDataDTO> emails;
     @NonNull
     private final Set<PhoneDataDTO> phones;
+    @NonNull
+    private final BigDecimal balance;
 }

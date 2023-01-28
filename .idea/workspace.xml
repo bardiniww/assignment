@@ -4,17 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="api gateway added">
-      <change afterPath="$PROJECT_DIR$/amqp/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/bardiniww/amqp/RabbitMQConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/bardiniww/amqp/RabbitMQMessageProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="amqp service init">
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/bardiniww/amqp/AmqpExchange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/amqp/src/main/java/com/bardiniww/amqp/AmqpRoutingKey.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/amqp/CashAmqpConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/amqp/CashTransactionConsumer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/apigw/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cash/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/CashApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/CashApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -45,18 +48,17 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="6" end1="7" start2="6" end2="13" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="8" end1="8" start2="14" end2="15" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="24" end1="25" start2="31" end2="31" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="26" end1="26" start2="32" end2="33" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="35" end1="35" start2="42" end2="56" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="92" end1="92" start2="113" end2="114" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="96" end1="97" start2="118" end2="118" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="173" end1="174" start2="194" end2="195" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="378" end1="379" start2="399" end2="414" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="398" end1="400" start2="433" end2="433" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="423" end1="424" start2="456" end2="459" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="425" end1="436" start2="460" end2="460" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="6" end1="11" start2="6" end2="10" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="12" end1="13" start2="11" end2="11" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="14" end1="14" start2="12" end2="14" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="15" end1="17" start2="15" end2="18" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="47" end1="59" start2="48" end2="59" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="93" end1="94" start2="93" end2="94" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="200" end1="201" start2="200" end2="201" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="405" end1="406" start2="405" end2="427" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="425" end1="428" start2="446" end2="446" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="450" end1="451" start2="468" end2="472" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="452" end1="463" start2="473" end2="473" changelist="881008b0-a237-410e-95d6-ef418204becd" />
       </ranges>
     </file>
   </component>
@@ -91,7 +93,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "MavenSettings"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -198,7 +200,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="72844000" />
+      <workItem from="1674563734222" duration="75701000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
