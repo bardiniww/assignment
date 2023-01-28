@@ -4,17 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="amqp base impl for cash and customer service">
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enum-lib/pom.xml" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="create customer method impl">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/enum-lib/src/main/java/com/bardiniww/enums/cash/CashAgentType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/enum-lib/src/main/java/com/bardiniww/enums/cash/CashTransactionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -31,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
       </list>
@@ -45,14 +38,21 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="6" end1="11" start2="6" end2="8" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="12" end1="20" start2="9" end2="9" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="50" end1="61" start2="39" end2="46" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="202" end1="203" start2="187" end2="188" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="407" end1="408" start2="392" end2="421" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="427" end1="431" start2="440" end2="440" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="452" end1="453" start2="461" end2="466" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="454" end1="465" start2="467" end2="467" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="6" end1="17" start2="6" end2="24" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="33" end1="33" start2="40" end2="41" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="43" end1="57" start2="51" end2="51" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="89" end1="90" start2="83" end2="84" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="115" end1="115" start2="109" end2="111" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="117" end1="118" start2="113" end2="113" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="119" end1="120" start2="114" end2="114" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="122" end1="123" start2="116" end2="117" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="177" end1="178" start2="171" end2="171" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="179" end1="179" start2="172" end2="173" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="196" end1="197" start2="190" end2="191" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="429" end1="430" start2="423" end2="452" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="449" end1="453" start2="471" end2="471" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="474" end1="475" start2="492" end2="497" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="476" end1="487" start2="498" end2="498" changelist="881008b0-a237-410e-95d6-ef418204becd" />
       </ranges>
     </file>
   </component>
@@ -87,7 +87,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "settings.editor.selected.configurable": "editor.preferences.import"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -113,14 +113,14 @@
       <recent name="$PROJECT_DIR$/customer/src/main/resources/db/migration" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bardiniww.clients.customer" />
+      <recent name="com.bardiniww.customer.validation" />
       <recent name="com.bardiniww.enums.cash" />
       <recent name="com.bardiniww.amqp" />
-      <recent name="com.bardiniww.clients.customer" />
       <recent name="com.bardiniww.cash.transaction" />
-      <recent name="com.bardiniww.cash.balance" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.zipkin: Compose Deployment">
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
     <configuration name="CashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cash" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.cash.CashApplication" />
@@ -175,8 +175,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.CashApplication" />
       </list>
@@ -194,7 +194,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="77502000" />
+      <workItem from="1674563734222" duration="87302000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -427,7 +427,42 @@
       <option name="project" value="LOCAL" />
       <updated>1674919405368</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="separate enums + dtos added for cash entitites">
+      <created>1674930281157</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1674930281157</updated>
+    </task>
+    <task id="LOCAL-00035" summary="customer create api impl">
+      <created>1674934711964</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1674934711964</updated>
+    </task>
+    <task id="LOCAL-00036" summary="validator methods impl">
+      <created>1674936056743</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1674936056743</updated>
+    </task>
+    <task id="LOCAL-00037" summary="email and phone exists check added">
+      <created>1674937198372</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1674937198372</updated>
+    </task>
+    <task id="LOCAL-00038" summary="create customer method impl">
+      <created>1674939920445</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1674939920445</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -447,11 +482,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="cash service init" />
-    <MESSAGE value="cash pojo added" />
-    <MESSAGE value="cash api structure added" />
-    <MESSAGE value="refactor class modifiers" />
-    <MESSAGE value="minor changes" />
     <MESSAGE value="assignment task model structure init" />
     <MESSAGE value="cash service entities edited" />
     <MESSAGE value="props added to cash entities" />
@@ -472,7 +502,12 @@
     <MESSAGE value="api gateway added" />
     <MESSAGE value="amqp service init" />
     <MESSAGE value="amqp base impl for cash and customer service" />
-    <option name="LAST_COMMIT_MESSAGE" value="amqp base impl for cash and customer service" />
+    <MESSAGE value="separate enums + dtos added for cash entitites" />
+    <MESSAGE value="customer create api impl" />
+    <MESSAGE value="validator methods impl" />
+    <MESSAGE value="email and phone exists check added" />
+    <MESSAGE value="create customer method impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="create customer method impl" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

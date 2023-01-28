@@ -41,19 +41,32 @@ public class CustomerServiceFacade implements CustomerService {
                         .user(createdUser)
                         .build()
         );
-        EmailData email = emailDataService.save(
+        final EmailData email = emailDataService.save(
                 EmailData.builder()
                         .email(request.getEmail())
                         .user(createdUser)
                         .build()
         );
 
-        PhoneData phone = phoneDataService.save(
+        final PhoneData phone = phoneDataService.save(
                 PhoneData.builder()
                         .phone(request.getPhone())
                         .user(createdUser)
                         .build()
         );
+
+        //todo проверить что работает
+        // проверить рэббит
+        // написать импл на сохранение транзакции + создание агента
+        // сделать миграции флайфей при старте бд + создание бд
+        // сделать докеры для сервисов
+        // добавить секьюрити
+        // написать тесты
+        // добавить свагер
+        // добавить кеширование
+        // добавить фронт
+        // добавить ci/cd
+        // добавить задеплоить на авс
 
         //todo impl
 //        rabbitMQMessageProducer.publish(new Object(), AmqpExchange.INTERNAL.getValue(), AmqpRoutingKey.CASH.getValue());
