@@ -5,7 +5,6 @@ import org.springframework.lang.NonNull;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Set;
 
 @AllArgsConstructor
 public class CustomerCreationResponseDTO implements Serializable {
@@ -21,7 +20,7 @@ public class CustomerCreationResponseDTO implements Serializable {
     @NonNull
     private final LocalDate dateOfBirth;
     @NonNull
-    private final Set<EmailDataDTO> emails;
+    private final String email;
     @NonNull
-    private final Set<PhoneDataDTO> phones;
+    private final String phone;
 }

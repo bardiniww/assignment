@@ -1,14 +1,17 @@
 package com.bardiniww.clients.customer;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.ToString;
 import org.springframework.lang.NonNull;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDate;
-import java.util.Set;
 
 @AllArgsConstructor
+@Getter
+@ToString
 public class CustomerCreationRequestDTO implements Serializable {
 
     private static final long serialVersionUUID = 1L;
@@ -20,9 +23,9 @@ public class CustomerCreationRequestDTO implements Serializable {
     @NonNull
     private final String password;
     @NonNull
-    private final Set<EmailDataDTO> emails;
+    private final String email;
     @NonNull
-    private final Set<PhoneDataDTO> phones;
+    private final String phone;
     @NonNull
     private final BigDecimal balance;
 }
