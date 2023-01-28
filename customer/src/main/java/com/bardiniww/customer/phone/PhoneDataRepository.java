@@ -1,4 +1,4 @@
-package com.bardiniww.phone;
+package com.bardiniww.customer.phone;
 
 public interface PhoneDataRepository {
 }

@@ -4,26 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="cash balance api added">
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/account/AccountServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/email/EmailDataJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/email/EmailDataRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/email/EmailDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/email/EmailDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/phone/PhoneDataJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/phone/PhoneDataRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/phone/PhoneDataService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/phone/PhoneDataServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserJpaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/user/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="fix impl service">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-    <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin" />
+    <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,6 +33,23 @@
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="24" start2="6" end2="12" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="25" end1="26" start2="13" end2="13" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="47" end1="47" start2="34" end2="51" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="84" end1="84" start2="88" end2="91" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="101" end1="102" start2="108" end2="109" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="130" end1="131" start2="137" end2="137" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="132" end1="132" start2="138" end2="139" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="147" end1="148" start2="154" end2="155" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="289" end1="290" start2="296" end2="325" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="327" end1="328" start2="362" end2="367" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="329" end1="340" start2="368" end2="368" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -82,6 +87,9 @@
   "keyToStringList": {
     "DatabaseDriversLRU": [
       "postgresql"
+    ],
+    "com.intellij.ide.scratch.LRUPopupBuilder$1/SQL Dialect": [
+      "PostgreSQL"
     ]
   }
 }]]></component>
@@ -99,13 +107,13 @@
       <recent name="com.bardiniww" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CashApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
     <configuration name="CashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cash" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.CashApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.cash.CashApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bardiniww.*" />
+          <option name="PATTERN" value="com.bardiniww.cash.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,10 +123,10 @@
     </configuration>
     <configuration name="CustomerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="customer" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.CustomerApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.customer.CustomerApplication" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.bardiniww.*" />
+          <option name="PATTERN" value="com.bardiniww.customer.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,8 +136,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.CashApplication" />
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.CashApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +153,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="53102000" />
+      <workItem from="1674563734222" duration="60973000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -287,7 +295,35 @@
       <option name="project" value="LOCAL" />
       <updated>1674831185286</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="customer api classes added">
+      <created>1674834499308</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1674834499308</updated>
+    </task>
+    <task id="LOCAL-00022" summary="cash_balance view added">
+      <created>1674838019189</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1674838019189</updated>
+    </task>
+    <task id="LOCAL-00023" summary="cash_balance repo method edited">
+      <created>1674840890591</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1674840890591</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fix impl service">
+      <created>1674841516140</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1674841516140</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +361,11 @@
     <MESSAGE value="cash migrations added" />
     <MESSAGE value="cash api edited" />
     <MESSAGE value="cash balance api added" />
-    <option name="LAST_COMMIT_MESSAGE" value="cash balance api added" />
+    <MESSAGE value="customer api classes added" />
+    <MESSAGE value="cash_balance view added" />
+    <MESSAGE value="cash_balance repo method edited" />
+    <MESSAGE value="fix impl service" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix impl service" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

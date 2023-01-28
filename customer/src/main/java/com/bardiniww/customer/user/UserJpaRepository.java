@@ -1,8 +1,8 @@
-package com.bardiniww.account;
+package com.bardiniww.customer.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface AccountJpaRepository extends AccountRepository, JpaRepository<Account, Long> {
+public interface UserJpaRepository extends UserRepository, JpaRepository<User, Long> {
 }

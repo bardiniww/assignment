@@ -1,4 +1,4 @@
-package com.bardiniww.email;
+package com.bardiniww.customer.email;
 
 public interface EmailDataRepository {
 }

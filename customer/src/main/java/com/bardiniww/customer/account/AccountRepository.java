@@ -1,4 +1,4 @@
-package com.bardiniww.account;
+package com.bardiniww.customer.account;
 
 public interface AccountRepository {
 }

@@ -1,6 +1,6 @@
-package com.bardiniww.email;
+package com.bardiniww.customer.email;
 
-import com.bardiniww.user.User;
+import com.bardiniww.customer.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

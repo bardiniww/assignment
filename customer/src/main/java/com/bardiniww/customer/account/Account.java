@@ -1,6 +1,6 @@
-package com.bardiniww.phone;
+package com.bardiniww.customer.account;
 
-import com.bardiniww.user.User;
+import com.bardiniww.customer.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -10,31 +10,28 @@ import javax.persistence.*;
 
 @Entity
 @Table(
-        name = "phone_data",
+        name = "account",
         uniqueConstraints = {
                 @UniqueConstraint(
-                        name = "phone_data_phone_unique",
-                        columnNames = "phone"
+                        name = "account_user_id_unique",
+                        columnNames = "user_id"
                 )
-        },
-        indexes = {
-                @Index(name = "phone_data_user_id_idx", columnList = "user_id")
         }
 )
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class PhoneData {
+public class Account {
     @Id
     @SequenceGenerator(
-            name = "phone_data_sequence",
-            sequenceName = "phone_data_sequence",
+            name = "account_sequence",
+            sequenceName = "account_sequence",
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
-            generator = "phone_data_sequence"
+            generator = "account_sequence"
     )
     @Column(
             name = "id",
@@ -42,7 +39,7 @@ public class PhoneData {
     )
     private Long id;
 
-    @ManyToOne(
+    @OneToOne(
             cascade = {CascadeType.REMOVE, CascadeType.PERSIST}
     )
     @JoinColumn(
@@ -50,15 +47,8 @@ public class PhoneData {
             nullable = false,
             referencedColumnName = "id",
             foreignKey = @ForeignKey(
-                    name = "phone_data_user_id_fkey"
+                    name = "account_user_id_fkey"
             )
     )
     private User user;
-
-    @Column(
-            name = "phone",
-            nullable = false,
-            length = 13
-    )
-    private String phone;
 }

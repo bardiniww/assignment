@@ -1,4 +1,4 @@
-package com.bardiniww.email;
+package com.bardiniww.customer.email;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

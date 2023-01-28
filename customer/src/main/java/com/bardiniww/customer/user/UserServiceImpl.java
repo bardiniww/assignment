@@ -1,4 +1,4 @@
-package com.bardiniww.user;
+package com.bardiniww.customer.user;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

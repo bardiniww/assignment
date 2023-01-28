@@ -1,4 +1,4 @@
-package com.bardiniww.phone;
+package com.bardiniww.customer.phone;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
