@@ -11,6 +11,7 @@
         <module>customer</module>
         <module>cash</module>
         <module>eureka-server</module>
+        <module>clients</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -26,6 +27,8 @@
         <lombok.version>1.18.24</lombok.version>
         <flyway-core.version>9.8.3</flyway-core.version>
         <spring-cloud.version>2021.0.5</spring-cloud.version>
+        <spring-cloud-starter-openfeign.version>4.0.1</spring-cloud-starter-openfeign.version>
+        <validation-api.version>2.0.1.Final</validation-api.version>
     </properties>
 
     <dependencyManagement>
@@ -62,6 +65,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <version>${spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+            <version>${spring-cloud-starter-openfeign.version}</version>
         </dependency>
     </dependencies>
 

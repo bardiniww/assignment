@@ -4,14 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="eureka-server service added">
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="eureka clients registered by services">
+      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/EmailDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/PhoneDataDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cash/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/CashApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/CashApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/user/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -42,17 +51,19 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="6" end1="9" start2="6" end2="7" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="10" end1="14" start2="8" end2="11" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="44" end1="53" start2="41" end2="50" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="98" end1="98" start2="95" end2="98" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="112" end1="113" start2="112" end2="113" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="154" end1="154" start2="154" end2="155" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="155" end1="156" start2="156" end2="156" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="172" end1="173" start2="172" end2="173" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="349" end1="350" start2="349" end2="357" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="392" end1="393" start2="399" end2="401" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="395" end1="406" start2="403" end2="403" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="6" end1="7" start2="6" end2="16" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="9" end1="11" start2="18" end2="18" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="12" end1="14" start2="19" end2="21" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="44" end1="55" start2="51" end2="64" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="80" end1="81" start2="89" end2="90" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="104" end1="104" start2="113" end2="116" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="105" end1="105" start2="117" end2="119" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="108" end1="109" start2="122" end2="122" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="111" end1="111" start2="124" end2="125" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="177" end1="178" start2="191" end2="192" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="361" end1="362" start2="375" end2="383" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="405" end1="406" start2="426" end2="428" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="408" end1="419" start2="430" end2="430" changelist="881008b0-a237-410e-95d6-ef418204becd" />
       </ranges>
     </file>
   </component>
@@ -78,7 +89,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "/Users/ivan/Desktop/projects/app/cash/src/main/resources/db/migration",
+    "last_opened_file_path": "/Users/ivan/Desktop/projects/app/clients/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -102,13 +113,18 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.bardiniww.customer.user" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/clients/src/main/resources" />
+      <recent name="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer1" />
+      <recent name="$PROJECT_DIR$/customer/src/main/java/com/bardiniww" />
       <recent name="$PROJECT_DIR$/cash/src/main/resources/db/migration" />
       <recent name="$PROJECT_DIR$/customer/src/main/resources/db/migration" />
-      <recent name="$PROJECT_DIR$/customer/src/main/resources" />
-      <recent name="$PROJECT_DIR$/customer/src/main/java/example" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.bardiniww.clients.customer" />
       <recent name="com.bardiniww.cash.transaction" />
       <recent name="com.bardiniww.cash.balance" />
       <recent name="com.bardiniww.account" />
@@ -175,7 +191,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="62793000" />
+      <workItem from="1674563734222" duration="68554000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -359,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674902740850</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="eureka clients registered by services">
+      <created>1674903775128</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1674903775128</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,7 +426,8 @@
     <MESSAGE value="fix impl service" />
     <MESSAGE value="parent dir added for both services" />
     <MESSAGE value="eureka-server service added" />
-    <option name="LAST_COMMIT_MESSAGE" value="eureka-server service added" />
+    <MESSAGE value="eureka clients registered by services" />
+    <option name="LAST_COMMIT_MESSAGE" value="eureka clients registered by services" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
