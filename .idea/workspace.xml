@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="customer dtos added with client">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="service tracing added">
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -35,22 +32,6 @@
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="6" end1="18" start2="6" end2="7" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="19" end1="23" start2="8" end2="8" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="39" end1="40" start2="24" end2="24" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="41" end1="41" start2="25" end2="26" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="53" end1="66" start2="38" end2="47" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="193" end1="194" start2="174" end2="175" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="384" end1="385" start2="365" end2="373" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="404" end1="405" start2="392" end2="392" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="429" end1="430" start2="416" end2="418" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="432" end1="443" start2="420" end2="420" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -116,7 +97,7 @@
       <recent name="com.bardiniww" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+  <component name="RunManager" selected="Docker.docker-compose.yml.zipkin: Compose Deployment">
     <configuration name="CashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cash" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.cash.CashApplication" />
@@ -156,8 +137,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="zipkin" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
         <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.CashApplication" />
@@ -176,7 +171,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="69384000" />
+      <workItem from="1674563734222" duration="69738000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -374,7 +369,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674910451084</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="service tracing added">
+      <created>1674911754789</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1674911754789</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,7 +396,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="customer service base classes added" />
     <MESSAGE value="pojo fields added" />
     <MESSAGE value="docker compose init postgre and pgadmin" />
     <MESSAGE value="register api added" />
@@ -419,7 +420,8 @@
     <MESSAGE value="eureka-server service added" />
     <MESSAGE value="eureka clients registered by services" />
     <MESSAGE value="customer dtos added with client" />
-    <option name="LAST_COMMIT_MESSAGE" value="customer dtos added with client" />
+    <MESSAGE value="service tracing added" />
+    <option name="LAST_COMMIT_MESSAGE" value="service tracing added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
