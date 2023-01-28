@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="parent dir added for both services">
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-server/src/main/resources/banner.txt" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="eureka-server service added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/CashApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/CashApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cash/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-server/src/main/java/com/bardiniww/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/src/main/java/com/bardiniww/eurekaserver/EurekaServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/application.yml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -42,15 +42,17 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="6" end1="9" start2="6" end2="9" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="35" end1="52" start2="35" end2="35" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="109" end1="110" start2="92" end2="93" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="136" end1="136" start2="119" end2="132" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="138" end1="138" start2="134" end2="135" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="155" end1="156" start2="152" end2="153" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="325" end1="326" start2="322" end2="330" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="367" end1="368" start2="371" end2="373" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="370" end1="381" start2="375" end2="375" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="6" end1="9" start2="6" end2="7" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="10" end1="14" start2="8" end2="11" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="44" end1="53" start2="41" end2="50" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="98" end1="98" start2="95" end2="98" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="112" end1="113" start2="112" end2="113" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="154" end1="154" start2="154" end2="155" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="155" end1="156" start2="156" end2="156" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="172" end1="173" start2="172" end2="173" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="349" end1="350" start2="349" end2="357" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="392" end1="393" start2="399" end2="401" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="395" end1="406" start2="403" end2="403" changelist="881008b0-a237-410e-95d6-ef418204becd" />
       </ranges>
     </file>
   </component>
@@ -96,6 +98,9 @@
     ]
   }
 }]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/cash/src/main/resources/db/migration" />
@@ -110,7 +115,7 @@
       <recent name="com.bardiniww" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
+  <component name="RunManager" selected="Spring Boot.CustomerApplication">
     <configuration name="CashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cash" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.cash.CashApplication" />
@@ -152,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.CashApplication" />
       </list>
     </recent_temporary>
@@ -170,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="61643000" />
+      <workItem from="1674563734222" duration="62793000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -347,7 +352,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674902130074</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="eureka-server service added">
+      <created>1674902740850</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1674902740850</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -390,7 +402,8 @@
     <MESSAGE value="cash_balance repo method edited" />
     <MESSAGE value="fix impl service" />
     <MESSAGE value="parent dir added for both services" />
-    <option name="LAST_COMMIT_MESSAGE" value="parent dir added for both services" />
+    <MESSAGE value="eureka-server service added" />
+    <option name="LAST_COMMIT_MESSAGE" value="eureka-server service added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
