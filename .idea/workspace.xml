@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="eureka clients registered by services">
-      <change afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationResponseDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/EmailDataDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/PhoneDataDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-default.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clients/src/main/resources/clients-docker.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="customer dtos added with client">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cash/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cash/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/customer/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/user/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-server/pom.xml" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -37,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -51,19 +39,16 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="6" end1="7" start2="6" end2="16" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="9" end1="11" start2="18" end2="18" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="12" end1="14" start2="19" end2="21" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="44" end1="55" start2="51" end2="64" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="80" end1="81" start2="89" end2="90" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="104" end1="104" start2="113" end2="116" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="105" end1="105" start2="117" end2="119" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="108" end1="109" start2="122" end2="122" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="111" end1="111" start2="124" end2="125" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="177" end1="178" start2="191" end2="192" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="361" end1="362" start2="375" end2="383" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="405" end1="406" start2="426" end2="428" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="408" end1="419" start2="430" end2="430" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="6" end1="18" start2="6" end2="7" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="19" end1="23" start2="8" end2="8" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="39" end1="40" start2="24" end2="24" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="41" end1="41" start2="25" end2="26" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="53" end1="66" start2="38" end2="47" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="193" end1="194" start2="174" end2="175" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="384" end1="385" start2="365" end2="373" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="404" end1="405" start2="392" end2="392" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="429" end1="430" start2="416" end2="418" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="432" end1="443" start2="420" end2="420" changelist="881008b0-a237-410e-95d6-ef418204becd" />
       </ranges>
     </file>
   </component>
@@ -191,7 +176,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="68554000" />
+      <workItem from="1674563734222" duration="69384000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -382,7 +367,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674903775128</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="customer dtos added with client">
+      <created>1674910451084</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1674910451084</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +394,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="customer service init struct added" />
     <MESSAGE value="customer service base classes added" />
     <MESSAGE value="pojo fields added" />
     <MESSAGE value="docker compose init postgre and pgadmin" />
@@ -427,7 +418,8 @@
     <MESSAGE value="parent dir added for both services" />
     <MESSAGE value="eureka-server service added" />
     <MESSAGE value="eureka clients registered by services" />
-    <option name="LAST_COMMIT_MESSAGE" value="eureka clients registered by services" />
+    <MESSAGE value="customer dtos added with client" />
+    <option name="LAST_COMMIT_MESSAGE" value="customer dtos added with client" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">

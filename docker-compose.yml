@@ -1,6 +1,7 @@
 version: '3'
 
 services:
+
   postgres:
     container_name: postgres
     image: postgres
@@ -30,6 +31,14 @@ services:
     networks:
       - postgres
     restart: unless-stopped
+
+  zipkin:
+    image: openzipkin/zipkin
+    container_name: zipkin
+    ports:
+      - "9411:9411"
+    networks:
+      - spring
 
 networks:
   postgres:
