@@ -12,6 +12,7 @@
         <module>cash</module>
         <module>eureka-server</module>
         <module>clients</module>
+        <module>apigw</module>
     </modules>
     <packaging>pom</packaging>
 
