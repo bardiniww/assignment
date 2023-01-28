@@ -17,12 +17,13 @@ public class CustomerServiceFacade implements CustomerService {
     private final UserService userService;
     private final AccountService accountService;
     private final RabbitMQMessageProducer rabbitMQMessageProducer;
-    private final CustomerCreationInputValidator validator;
+    private final CustomerCreationInputValidator customerCreationInputValidator;
 
     @NonNull
     public CustomerCreationResponseDTO createCustomer(@NonNull final CustomerCreationRequestDTO request) {
-        validator.validateEmail(request.getEmail());
-        validator.validatePhone(request.getPhone());
+        customerCreationInputValidator.validate(request);
+
+
 
         //todo send transaction
         rabbitMQMessageProducer.publish(new Object(), AmqpExchange.INTERNAL.getValue(), AmqpRoutingKey.CASH.getValue());
