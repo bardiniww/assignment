@@ -1,5 +1,6 @@
 package com.bardiniww.cash.transaction;
 
+import com.bardiniww.enums.cash.CashTransactionType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.lang.NonNull;

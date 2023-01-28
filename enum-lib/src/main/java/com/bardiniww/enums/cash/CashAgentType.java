@@ -1,4 +1,4 @@
-package com.bardiniww.cash.agent;
+package com.bardiniww.enums.cash;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;

@@ -1,5 +1,6 @@
 package com.bardiniww.cash.agent;
 
+import com.bardiniww.enums.cash.CashAgentType;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.lang.NonNull;
