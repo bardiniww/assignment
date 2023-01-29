@@ -7,5 +7,8 @@ import java.math.BigDecimal;
 public interface CashBalanceService {
 
     @NonNull
-    BigDecimal getBalance(@NonNull final Long accountId);
+    BigDecimal getBalanceByAccountId(@NonNull final Long accountId);
+
+    @NonNull
+    BigDecimal getBalanceByCashAgentId(@NonNull final Long cashAgentId);
 }

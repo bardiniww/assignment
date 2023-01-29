@@ -5,5 +5,6 @@ import org.springframework.lang.NonNull;
 import java.math.BigDecimal;
 
 interface CashBalanceRepository {
-    BigDecimal getBalance(@NonNull final Long accountId);
+    BigDecimal getBalanceByAccountId(@NonNull final Long accountId);
+    BigDecimal getBalanceByCashAgentId(@NonNull final Long cashAgentId);
 }

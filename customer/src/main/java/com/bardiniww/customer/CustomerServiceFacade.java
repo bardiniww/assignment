@@ -20,6 +20,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
 
+import java.util.UUID;
+
 @AllArgsConstructor
 @Service
 public class CustomerServiceFacade implements CustomerService {
@@ -61,6 +63,7 @@ public class CustomerServiceFacade implements CustomerService {
         );
 
         final CashTransactionRequestDTO userInitCashTransaction = new CashTransactionRequestDTO(
+                UUID.randomUUID(),
                 0L,
                 CashAgentType.SYSTEM.getId(),
                 createdAccount.getId(),

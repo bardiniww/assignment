@@ -7,12 +7,15 @@ import lombok.ToString;
 import org.springframework.lang.NonNull;
 
 import java.math.BigDecimal;
+import java.util.UUID;
 
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @ToString
 public class CashTransactionRequestDTO {
+    @NonNull
+    private UUID id;
     @NonNull
     private Long creditorAccountId;
     @NonNull

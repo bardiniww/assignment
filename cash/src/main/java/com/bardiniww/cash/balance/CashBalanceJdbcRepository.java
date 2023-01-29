@@ -13,12 +13,21 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 class CashBalanceJdbcRepository implements CashBalanceRepository {
 
-    private static final String SQL_GET_BALANCE =
+    private static final String SQL_GET_BALANCE_BY_ACCOUNT_ID =
             "SELECT COALESCE(" +
                     "(" +
-                        "SELECT cb.balance as balance FROM cash_balance cb " +
+                        "SELECT cb.balance FROM cash_balance cb " +
                         "JOIN cash_agent ca ON cb.cash_agent_id = ca.id " +
                         "WHERE ca.account_id = :account_id" +
+                    "), " +
+                    "0.00::decimal" +
+            ")";
+
+    private static final String SQL_GET_BALANCE_BY_CASH_AGENT_ID =
+            "SELECT COALESCE(" +
+                    "(" +
+                        "SELECT balance FROM cash_balance " +
+                        "WHERE cash_agent_id = :cash_agent_id" +
                     "), " +
                     "0.00::decimal" +
             ")";
@@ -27,11 +36,21 @@ class CashBalanceJdbcRepository implements CashBalanceRepository {
     private final NamedParameterJdbcTemplate namedParameterJdbcTemplate;
 
     @Override
-    public BigDecimal getBalance(@NonNull final Long accountId) {
+    public BigDecimal getBalanceByAccountId(@NonNull final Long accountId) {
         return namedParameterJdbcTemplate.queryForObject(
-                SQL_GET_BALANCE,
+                SQL_GET_BALANCE_BY_ACCOUNT_ID,
                 new MapSqlParameterSource()
                         .addValue("account_id", accountId),
+                BigDecimal.class
+        );
+    }
+
+    @Override
+    public BigDecimal getBalanceByCashAgentId(@NonNull final Long cashAgentId) {
+        return namedParameterJdbcTemplate.queryForObject(
+                SQL_GET_BALANCE_BY_CASH_AGENT_ID,
+                new MapSqlParameterSource()
+                        .addValue("cash_agent_id", cashAgentId),
                 BigDecimal.class
         );
     }

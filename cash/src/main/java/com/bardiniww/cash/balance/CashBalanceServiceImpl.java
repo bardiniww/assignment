@@ -13,7 +13,13 @@ public class CashBalanceServiceImpl implements CashBalanceService {
 
     @Override
     @NonNull
-    public BigDecimal getBalance(@NonNull Long accountId) {
-        return cashBalanceRepository.getBalance(accountId);
+    public BigDecimal getBalanceByAccountId(@NonNull final Long accountId) {
+        return cashBalanceRepository.getBalanceByAccountId(accountId);
+    }
+
+    @NonNull
+    @Override
+    public BigDecimal getBalanceByCashAgentId(@NonNull final Long cashAgentId) {
+        return cashBalanceRepository.getBalanceByCashAgentId(cashAgentId);
     }
 }

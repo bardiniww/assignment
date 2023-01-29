@@ -35,7 +35,6 @@ public class CashTransactionConsumer {
         final long debtorAgentId = cashAgentService
                 .getAgentIdByAccount(request.getDebtorAccountId(), request.getDebtorTypeId());
 
-        //todo impl race control + balance check
         cashTransactionService.save(
                 CashTransaction.builder()
                         .creditorCashAgentId(creditorAgentId)
@@ -44,5 +43,7 @@ public class CashTransactionConsumer {
                         .type(CashTransactionType.getById(request.getTransactionTypeId()))
                         .build()
         );
+
+        log.info("Cash transaction request was successfully processed {}", request);
     }
 }
