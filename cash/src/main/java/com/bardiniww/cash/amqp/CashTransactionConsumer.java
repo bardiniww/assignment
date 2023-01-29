@@ -23,7 +23,7 @@ public class CashTransactionConsumer {
     @RabbitListener(queues = "${rabbitmq.queues.cash}")
     @Transactional
     public void process(CashTransactionRequestDTO request) {
-        log.info("Consumed {} from queue", request);
+        log.info("Save cash transaction request was consumed {} from queue", request);
 
         if (request.getBalance().equals(BigDecimal.ZERO)) {
             return;

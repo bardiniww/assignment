@@ -44,7 +44,7 @@ CREATE INDEX cash_transaction_creditor_cash_agent_id_idx on cash_transaction usi
 CREATE INDEX cash_transaction_debtor_cash_agent_id_idx on cash_transaction using btree (debtor_cash_agent_id);
 
 
-CREATE VIEW cash_balance AS
+CREATE MATERIALIZED VIEW cash_balance AS
 SELECT cash_agent.id AS cash_agent_id,
        COALESCE(SUM(CASE WHEN cash_transaction.creditor_cash_agent_id = cash_agent.id THEN cash_transaction.amount ELSE 0 END),0) AS credit,
        COALESCE(SUM(CASE WHEN cash_transaction.debtor_cash_agent_id = cash_agent.id THEN cash_transaction.amount ELSE 0 END),0) AS debit,
@@ -52,5 +52,7 @@ SELECT cash_agent.id AS cash_agent_id,
 FROM cash_agent
          LEFT JOIN cash_transaction ON cash_agent.id = cash_transaction.creditor_cash_agent_id OR cash_agent.id = cash_transaction.debtor_cash_agent_id
 GROUP BY cash_agent.id;
+
+CREATE INDEX cash_balance_cash_agent_id_idx on cash_balance using btree (cash_agent_id);
 
 
