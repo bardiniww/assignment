@@ -6,11 +6,13 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 import org.springframework.lang.NonNull;
 
+import java.math.BigDecimal;
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @ToString
-public class CashTransactionDTO {
+public class CashTransactionRequestDTO {
     @NonNull
     private Long creditorAccountId;
     @NonNull
@@ -19,6 +21,8 @@ public class CashTransactionDTO {
     private Long debtorAccountId;
     @NonNull
     private Integer debtorTypeId;
+    @NonNull
+    private BigDecimal balance;
     @NonNull
     private Integer transactionTypeId;
 }

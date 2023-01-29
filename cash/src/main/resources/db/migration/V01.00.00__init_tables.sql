@@ -4,6 +4,7 @@ CREATE TABLE cash_agent_type (
 );
 
 INSERT INTO cash_agent_type VALUES
+(0, 'System'),
 (1, 'Pure customer'),
 (2, 'Huge company');
 

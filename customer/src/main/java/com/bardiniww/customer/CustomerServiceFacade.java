@@ -1,6 +1,9 @@
 package com.bardiniww.customer;
 
+import com.bardiniww.amqp.AmqpExchange;
+import com.bardiniww.amqp.AmqpRoutingKey;
 import com.bardiniww.amqp.RabbitMQMessageProducer;
+import com.bardiniww.clients.cash.CashTransactionRequestDTO;
 import com.bardiniww.clients.customer.CustomerCreationRequestDTO;
 import com.bardiniww.clients.customer.CustomerCreationResponseDTO;
 import com.bardiniww.customer.account.Account;
@@ -11,6 +14,8 @@ import com.bardiniww.customer.phone.PhoneData;
 import com.bardiniww.customer.phone.PhoneDataService;
 import com.bardiniww.customer.user.User;
 import com.bardiniww.customer.user.UserService;
+import com.bardiniww.enums.cash.CashAgentType;
+import com.bardiniww.enums.cash.CashTransactionType;
 import lombok.AllArgsConstructor;
 import org.springframework.lang.NonNull;
 import org.springframework.stereotype.Service;
@@ -55,22 +60,20 @@ public class CustomerServiceFacade implements CustomerService {
                         .build()
         );
 
-        //todo проверить что работает
-        // проверить рэббит
-        // написать импл на сохранение транзакции + создание агента
-        // сделать миграции флайфей при старте бд + создание бд
-        // сделать докеры для сервисов
-        // добавить секьюрити
-        // добавить шедуллер
-        // написать тесты
-        // добавить свагер
-        // добавить кеширование
-        // добавить фронт
-        // добавить ci/cd
-        // добавить задеплоить на авс
+        final CashTransactionRequestDTO userInitCashTransaction = new CashTransactionRequestDTO(
+                0L,
+                CashAgentType.SYSTEM.getId(),
+                createdAccount.getId(),
+                CashAgentType.CUSTOMER.getId(),
+                request.getBalance(),
+                CashTransactionType.USER_INIT.getId()
+        );
+        rabbitMQMessageProducer.publish(
+                userInitCashTransaction,
+                AmqpExchange.INTERNAL.getValue(),
+                AmqpRoutingKey.CASH.getValue()
+        );
 
-        //todo impl
-//        rabbitMQMessageProducer.publish(new Object(), AmqpExchange.INTERNAL.getValue(), AmqpRoutingKey.CASH.getValue());
         return new CustomerCreationResponseDTO(
                 createdUser.getId(),
                 createdAccount.getId(),

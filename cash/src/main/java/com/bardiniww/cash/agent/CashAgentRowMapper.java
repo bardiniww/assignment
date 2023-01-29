@@ -1,5 +1,6 @@
 package com.bardiniww.cash.agent;
 
+import com.bardiniww.enums.cash.CashAgentType;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

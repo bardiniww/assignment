@@ -1,5 +1,6 @@
 package com.bardiniww.cash.transaction;
 
+import com.bardiniww.enums.cash.CashTransactionType;
 import org.springframework.jdbc.core.RowMapper;
 
 import java.sql.ResultSet;

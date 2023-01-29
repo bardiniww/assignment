@@ -4,18 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="tomorrow todo">
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="exception handler added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationResponseDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/amqp/CashTransactionConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/amqp/CashTransactionConsumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionJdbcRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRowMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cash/src/main/resources/db/migration/V01.00.00__init_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/db/migration/V01.00.00__init_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionRequestDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/db/migration/V01.00.00__init_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/db/migration/V01.00.00__init_tables.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enum-lib/src/main/java/com/bardiniww/enums/cash/CashAgentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/enum-lib/src/main/java/com/bardiniww/enums/cash/CashAgentType.java" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,23 +49,6 @@
   </component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/.idea/workspace.xml">
-      <ranges>
-        <range start1="6" end1="7" start2="6" end2="7" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="8" end1="8" start2="8" end2="12" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="9" end1="9" start2="13" end2="14" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="40" end1="55" start2="45" end2="55" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="123" end1="123" start2="123" end2="136" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="179" end1="179" start2="192" end2="193" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="196" end1="197" start2="210" end2="211" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="464" end1="465" start2="478" end2="486" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="484" end1="485" start2="505" end2="505" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="509" end1="510" start2="529" end2="531" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="511" end1="522" start2="532" end2="532" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-      </ranges>
-    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -88,7 +81,7 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editor.preferences.import"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -121,7 +114,7 @@
       <recent name="com.bardiniww.cash.transaction" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CustomerApplication">
+  <component name="RunManager" selected="Spring Boot.CashApplication">
     <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="apigw" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.apigw.ApiGatewayApplication" />
@@ -161,18 +154,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="eureka-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.eurekaserver.EurekaServerApplication" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.bardiniww.eurekaserver.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="docker-compose.yml.rabbitmq: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="rabbitmq" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
     </configuration>
     <configuration name="docker-compose.yml.zipkin: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
@@ -189,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CashApplication" />
         <item itemvalue="Spring Boot.CustomerApplication" />
+        <item itemvalue="Docker.docker-compose.yml.rabbitmq: Compose Deployment" />
         <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
         <item itemvalue="Spring Boot.ApiGatewayApplication" />
-        <item itemvalue="Spring Boot.EurekaServerApplication" />
-        <item itemvalue="Spring Boot.CashApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +202,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="90979000" />
+      <workItem from="1674563734222" duration="98708000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -477,7 +470,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674939920445</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="tomorrow todo">
+      <created>1674940292438</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1674940292438</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fixes with dto and serialize process">
+      <created>1674988981942</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1674988981942</updated>
+    </task>
+    <task id="LOCAL-00041" summary="exception handler added">
+      <created>1674991254146</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1674991254146</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,9 +511,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="assignment task model structure init" />
-    <MESSAGE value="cash service entities edited" />
-    <MESSAGE value="props added to cash entities" />
     <MESSAGE value="flyway added" />
     <MESSAGE value="cash migrations added" />
     <MESSAGE value="cash api edited" />
@@ -522,16 +533,24 @@
     <MESSAGE value="validator methods impl" />
     <MESSAGE value="email and phone exists check added" />
     <MESSAGE value="create customer method impl" />
-    <option name="LAST_COMMIT_MESSAGE" value="create customer method impl" />
+    <MESSAGE value="tomorrow todo" />
+    <MESSAGE value="fixes with dto and serialize process" />
+    <MESSAGE value="exception handler added" />
+    <option name="LAST_COMMIT_MESSAGE" value="exception handler added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/cash/src/main/java/com/bardiniww/CashApplication.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentJdbcRepository.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

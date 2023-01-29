@@ -10,8 +10,9 @@ import java.util.Map;
 @Slf4j
 @Getter
 public enum CashAgentType {
+    SYSTEM(0, "System"),
     CUSTOMER(1, "Pure customer"),
-    COMPANY(2, "Huge company")
+    COMPANY(2, "Huge company"),
     ;
 
     private final int id;
