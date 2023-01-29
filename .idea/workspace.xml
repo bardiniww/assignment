@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="create customer method impl">
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="tomorrow todo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/clients/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationRequestDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/customer/CustomerCreationResponseDTO.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/resources/db/migration/V01.00.00__init_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/resources/db/migration/V01.00.00__init_tables.sql" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
@@ -38,21 +43,17 @@
   <component name="LineStatusTrackerManager">
     <file path="$PROJECT_DIR$/.idea/workspace.xml">
       <ranges>
-        <range start1="6" end1="17" start2="6" end2="24" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="33" end1="33" start2="40" end2="41" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="43" end1="57" start2="51" end2="51" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="89" end1="90" start2="83" end2="84" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="115" end1="115" start2="109" end2="111" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="117" end1="118" start2="113" end2="113" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="119" end1="120" start2="114" end2="114" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="122" end1="123" start2="116" end2="117" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="177" end1="178" start2="171" end2="171" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="179" end1="179" start2="172" end2="173" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
-        <range start1="196" end1="197" start2="190" end2="191" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="429" end1="430" start2="423" end2="452" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="449" end1="453" start2="471" end2="471" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="474" end1="475" start2="492" end2="497" changelist="881008b0-a237-410e-95d6-ef418204becd" />
-        <range start1="476" end1="487" start2="498" end2="498" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="6" end1="7" start2="6" end2="7" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="8" end1="8" start2="8" end2="12" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="9" end1="9" start2="13" end2="14" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="40" end1="55" start2="45" end2="55" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="123" end1="123" start2="123" end2="136" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="179" end1="179" start2="192" end2="193" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="196" end1="197" start2="210" end2="211" changelist="a31edab0-fd35-48da-ae99-081312fea87d" />
+        <range start1="464" end1="465" start2="478" end2="486" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="484" end1="485" start2="505" end2="505" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="509" end1="510" start2="529" end2="531" changelist="881008b0-a237-410e-95d6-ef418204becd" />
+        <range start1="511" end1="522" start2="532" end2="532" changelist="881008b0-a237-410e-95d6-ef418204becd" />
       </ranges>
     </file>
   </component>
@@ -121,6 +122,19 @@
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CustomerApplication">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="apigw" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.apigw.ApiGatewayApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bardiniww.apigw.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CashApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="cash" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.bardiniww.cash.CashApplication" />
@@ -177,6 +191,7 @@
       <list>
         <item itemvalue="Spring Boot.CustomerApplication" />
         <item itemvalue="Docker.docker-compose.yml.zipkin: Compose Deployment" />
+        <item itemvalue="Spring Boot.ApiGatewayApplication" />
         <item itemvalue="Spring Boot.EurekaServerApplication" />
         <item itemvalue="Spring Boot.CashApplication" />
       </list>
@@ -194,7 +209,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="87302000" />
+      <workItem from="1674563734222" duration="90979000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>

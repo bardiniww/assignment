@@ -2,19 +2,23 @@ package com.bardiniww.clients.cash;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 import org.springframework.lang.NonNull;
 
 @AllArgsConstructor
+@NoArgsConstructor
 @Getter
+@ToString
 public class CashTransactionDTO {
     @NonNull
-    private final Long creditorAccountId;
+    private Long creditorAccountId;
     @NonNull
-    private final Integer creditorTypeId;
+    private Integer creditorTypeId;
     @NonNull
-    private final Long debtorAccountId;
+    private Long debtorAccountId;
     @NonNull
-    private final Integer debtorTypeId;
+    private Integer debtorTypeId;
     @NonNull
-    private final Integer transactionTypeId;
+    private Integer transactionTypeId;
 }

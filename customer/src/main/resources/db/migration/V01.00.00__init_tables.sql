@@ -5,7 +5,7 @@ create sequence phone_data_sequence;
 
 create table public."user" (
                                id bigint primary key not null,
-                               date_of_birth timestamp without time zone not null,
+                               date_of_birth date not null,
                                name character varying(500) not null,
                                password character varying(500) not null
 );
