@@ -20,6 +20,10 @@ public class CashTransactionConsumer {
     private final CashTransactionService cashTransactionService;
     private final CashAgentService cashAgentService;
 
+    /**
+     * !IMPORTANT!
+     * Process database conditions in case of several consumer instances exist
+     */
     @RabbitListener(queues = "${rabbitmq.queues.cash}")
     @Transactional
     public void process(CashTransactionRequestDTO request) {

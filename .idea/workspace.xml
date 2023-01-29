@@ -4,28 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="exception handler added">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentJdbcRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/agent/CashAgentServiceImpl.java" afterDir="false" />
+    <list default="true" id="a31edab0-fd35-48da-ae99-081312fea87d" name="Changes" comment="cash transaction save impl">
       <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/amqp/CashTransactionConsumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/amqp/CashTransactionConsumer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionJdbcRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionJdbcRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionRowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/java/com/bardiniww/cash/transaction/CashTransactionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cash/src/main/resources/db/migration/V01.00.00__init_tables.sql" beforeDir="false" afterPath="$PROJECT_DIR$/cash/src/main/resources/db/migration/V01.00.00__init_tables.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/clients/src/main/java/com/bardiniww/clients/cash/CashTransactionRequestDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/bardiniww/customer/CustomerServiceFacade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enum-lib/src/main/java/com/bardiniww/enums/cash/CashAgentType.java" beforeDir="false" afterPath="$PROJECT_DIR$/enum-lib/src/main/java/com/bardiniww/enums/cash/CashAgentType.java" afterDir="false" />
     </list>
     <list id="881008b0-a237-410e-95d6-ef418204becd" name="ignor" comment="docker compose init postgre and pgadmin">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +186,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1674563733020</updated>
-      <workItem from="1674563734222" duration="98708000" />
+      <workItem from="1674563734222" duration="109613000" />
     </task>
     <task id="LOCAL-00001" summary="customer service init struct added">
       <created>1674565367727</created>
@@ -491,7 +475,35 @@
       <option name="project" value="LOCAL" />
       <updated>1674991254146</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="transaction save by user creation event impl">
+      <created>1674996936289</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1674996936289</updated>
+    </task>
+    <task id="LOCAL-00043" summary="view edited to materialized view and index added">
+      <created>1675015174814</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1675015174814</updated>
+    </task>
+    <task id="LOCAL-00044" summary="rollback to not materialized view">
+      <created>1675016968750</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1675016968750</updated>
+    </task>
+    <task id="LOCAL-00045" summary="cash transaction save impl">
+      <created>1675019300464</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1675019300464</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -511,10 +523,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="flyway added" />
-    <MESSAGE value="cash migrations added" />
-    <MESSAGE value="cash api edited" />
-    <MESSAGE value="cash balance api added" />
     <MESSAGE value="customer api classes added" />
     <MESSAGE value="cash_balance view added" />
     <MESSAGE value="cash_balance repo method edited" />
@@ -536,7 +544,11 @@
     <MESSAGE value="tomorrow todo" />
     <MESSAGE value="fixes with dto and serialize process" />
     <MESSAGE value="exception handler added" />
-    <option name="LAST_COMMIT_MESSAGE" value="exception handler added" />
+    <MESSAGE value="transaction save by user creation event impl" />
+    <MESSAGE value="view edited to materialized view and index added" />
+    <MESSAGE value="rollback to not materialized view" />
+    <MESSAGE value="cash transaction save impl" />
+    <option name="LAST_COMMIT_MESSAGE" value="cash transaction save impl" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
